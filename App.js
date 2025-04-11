@@ -62,7 +62,7 @@ class App extends Component {
           <Text style={styles.subtitle}>Esses são os exercícios para você começar!</Text>
         </View>
 
-        {/* Treino de Peito */}
+        
         <View style={styles.section}>
           <Text style={styles.title}>Treino de Peito</Text>
           <Image source={{ uri: 'https://static.strengthlevel.com/images/exercises/bench-press/bench-press-400.avif' }} style={styles.image} />
@@ -76,10 +76,8 @@ class App extends Component {
           <Text style={styles.text}>Tipo do exercício: Peso livre</Text>
         </View>
 
-        {/* Treino de Costas e Bíceps */}
         <Jobs largura={250} altura={250} />
 
-        {/* Botão para treino de pernas */}
         <View style={{ marginTop: 30 }}>
           <Button
             title={this.state.mostrarTreinoPerna ? "Ocultar treino de pernas" : "Mostrar treino de pernas"}
@@ -88,7 +86,6 @@ class App extends Component {
           />
         </View>
 
-        {/* Treino de pernas */}
         {this.state.mostrarTreinoPerna && <Pernas largura={250} altura={250} />}
       </ScrollView>
     );
